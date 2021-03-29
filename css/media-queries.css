@@ -29,7 +29,7 @@
    ------------------------------------------------------------------ */
    header .banner { padding-bottom: 12px; }
    header .banner-text h1 {
-      font: 78px/1.1em 'opensans-bold', sans-serif;
+      font: 70px/1.1em 'opensans-bold', sans-serif;
       letter-spacing: -1px;      
    }
    header .banner-text h3 {
@@ -212,6 +212,10 @@
     /* scrolldown link */
    header .scrolldown { display: none; }
 
+   #hiddenHeader { display: none !important; }
+
+   #shownHeader { display: block !important; }
+
 
    /* About Section
    -------------------------------------------------------------------- */
@@ -380,6 +384,11 @@
    /* header social links */
    header .social { font-size: 20px;}
    header .social li { margin: 0 6px; }
+
+   
+   #hiddenHeader { display: none !important; }
+
+   #shownHeader { display: block !important; }
 
    /* footer
    ------------------------------------------------------------------------ */

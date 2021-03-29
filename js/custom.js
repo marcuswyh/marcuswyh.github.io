@@ -24,8 +24,9 @@ var TxtRotate = function(el, toRotate, period) {
 
     var that = this;
     var delta = 300 - Math.random() * 100;
+    var windowSize = window.matchMedia("(max-width: 767px)")
 
-    if (!this.isDeleting && this.txt === fullTxt) {
+    if (!this.isDeleting && this.txt === fullTxt && windowSize.matches == false) {
        delta = this.period;
        var css = document.createElement("style");
        css.type = "text/css";
