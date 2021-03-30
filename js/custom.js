@@ -162,24 +162,3 @@ $(".headerSpan").bind("webkitAnimationEnd mozAnimationEnd animationEnd", functio
 $(".headerSpan").hover(function(){
     $(this).addClass("animated");        
 })
-
-
-// contact form submit
-    
-async function handleSubmit(event) {
-event.preventDefault();
-var data = new FormData(event.target);
-fetch(event.target.action, {
-   method: form.method,
-   body: data,
-   headers: {
-      'Accept': 'application/json'
-   }
-}).then(response => {
-   alert('Thanks for the email, we\'ll be in touch promptly!');
-   form.reset()
-}).catch(error => {
-   alert("Oops! There was a problem submitting your form");
-});
-}
-form.addEventListener("submit", handleSubmit)
