@@ -165,8 +165,6 @@ $(".headerSpan").hover(function(){
 
 
 // contact form submit
-
-var form = document.getElementById("contactForm");
     
 async function handleSubmit(event) {
 event.preventDefault();
